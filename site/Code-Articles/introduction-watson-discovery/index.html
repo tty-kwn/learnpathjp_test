@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Introduction Watson Discovery - IBM Code Learning Path 日本語サイト</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Introduction Watson Discovery";
+    var mkdocs_page_input_path = "Code-Articles/introduction-watson-discovery/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> IBM Code Learning Path 日本語サイト</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../index.md">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Learning Paths</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Watson Discoveryを始める</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../Code-Learning-Paths/get-started-watson-discovery/">Index</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Introduction Watson Discovery</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/">Create an app to perform intelligent searches on data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Code-Patterns/enhance-customer-helpdesk-with-smart-document-understanding-using-search-skill/">Enhance customer helpdesk with smart document understanding using search skill</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Code-Tutorials/create-an-intelligent-search-app-using-watson-discovery-ui-components/">Create an intelligent search app using watson discovery ui components</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Code-Learning-Paths/get-started-watson-discovery/summary/">Summary</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">IBM Code Learning Path 日本語サイト</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Learning Paths &raquo;</li>
+        
+      
+        
+          <li>Watson Discoveryを始める &raquo;</li>
+        
+      
+    
+    <li>Introduction Watson Discovery</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="introduction">Introduction</h2>
+<p>IBM Watson Discovery を使用すると、非構造化データ (JSON、HTML、PDF、Word など) の取り込み、正規化、エンリッチ、検索を迅速かつ正確に行うことができます。自然言語理解や文書変換などのコア Watson API と、プライベートまたはパブリックデータの大規模なコレクションを簡単にアップロード、エンリッチ化、インデックス化できる UI ツールがパッケージされています。</p>
+<p>次の図は、Discovery パイプラインを構成するすべてのコンポーネントのハイレベルビューです。</p>
+<p><img alt="pipeline" src="images/disco-pipeline-new.png" /></p>
+<p><strong>Note:</strong> Watson Discovery V2は2021年8月にリリースされました。既存のV1ユーザーの方は、V1とV2の<a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-version-choose#version-choose-comparison&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">機能の比較</a>ができます。</p>
+<h2 id="_1">用語と概念</h2>
+<h3 id="watson-discovery">Watson Discovery のサービス用語</h3>
+<p>ここでは、Discovery に固有の用語や概念について説明します。</p>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>定義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-projects&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">プロジェクト</a></td>
+<td>プロジェクトは、リソースを収集して管理するための便利な方法です。コレクションを作成することで、プロジェクトタイプを割り当て、データをプロジェクトに接続することができます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-collections&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">コレクション</a></td>
+<td>コレクションは、環境内のデータを論理的に分割したもので、独立してクエリを実行できます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-nlu&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Enrichments</a></td>
+<td>Discovery には、データに対する認知的なエンリッチメントとインサイトを提供する強力な分析エンジンが含まれています。これらのエンリッチメントには、エンティティ、キーワード、品詞、センチメントが含まれます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-facets&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">ファセット</a></td>
+<td>ファセットは、類似したパターンやコンテンツを共有するドキュメントを整理および分類するために Discovery で使用されます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-reference#aggregations&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">アグリゲーション</a></td>
+<td>これは、選択したエンリッチメントの上位値など、一連のデータ値を返すディスカバリーを指します。たとえば、データコレクションに出現する上位 10 個の概念を返すことができます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-parameters#passages&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">パサージュ</a></td>
+<td><a href="">パッセージ</a> 大規模なドキュメントを扱う際に、パッセージ検索機能を使用して、ベストマッチに関連する短くて関連性の高い抜粋を返すことができます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-configuring-fields&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Smart Document Understanding</a></td>
+<td>[スマートドキュメント理解]を使用して、ドキュメントをより小さく、より消費しやすい情報の塊に分割します。ドキュメント内の正しい情報にインデックスを付けることで、アプリケーションが検索して返すことのできる答えを改善することができます。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-train&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">関連性のトレーニング</a></td>
+<td>関連性のトレーニングは、Discovery のクエリ結果をトレーニングして改善する機能を提供します。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-reference&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Discovery Query Language</a></td>
+<td><a href="">Discovery Query Language</a> フィールド名、演算子、およびキーワードを使用して結果を検索するために使用するクエリの構文です。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-parameters#nlq&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">自然言語クエリ</a></td>
+<td>厳密なクエリ言語の代わりに、"How do I save a file? "のような簡単なフレーズで言語をクエリすることもできます。</td>
+</tr>
+<tr>
+<td><a href="#tooling">Watson Discovery tooling</a></td>
+<td>コレクションの作成と投入、エンリッチメントの適用、データのクエリとテストに使用できる、IBM Cloud コンソールから利用可能な UI ツールの広範なセットを指します。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">エンリッチメント</h3>
+<p>Discovery には、データに対する認知的なエンリッチメントやインサイトを提供する強力な分析エンジンがあります。自然言語処理 (NLP) 機能を内蔵しており、JSON、HTML、PDF、Microsoft&trade; Word など、さまざまな種類のドキュメントからエンリッチメントを抽出することができます。次の表は、主なエンリッチメントを示しています。</p>
+<table>
+<thead>
+<tr>
+<th>エンリッチメント</th>
+<th>定義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-nlu#nlu-entities&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Entities</a></td>
+<td>人、会社、組織、都市、地理的特徴。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-nlu#nlu-sentiment&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Sentiment</a></td>
+<td>全体的な肯定的または否定的なセンチメントを識別します。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-nlu#nlu-keywords&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Keywords</a></td>
+<td><a href="">Keywords</a> 重要なキーワードを決定し、それらをランク付けし、オプションとして、センチメントを検出します。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-nlu#nlu-pos&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Parts of speech</a></td>
+<td>コンテンツ内の品詞（例えば、名詞や動詞）を識別します。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-contracts-schema&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Contracts</a></td>
+<td><a href="">契約書</a> 特定の種類のドキュメントについて、契約用語や詳細を識別します。</td>
+</tr>
+<tr>
+<td><a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-understanding_tables&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">表の理解</a></td>
+<td>特定の種類のドキュメントについて、ディスカバリーは、テーブルおよびテーブル関連データの詳細情報を提供します。</td>
+</tr>
+</tbody>
+</table>
+<p>これらのエンリッチメントに対して自然言語によるクエリを行うことができるため、一般的なキーワード検索エンジンよりも優位性があります。</p>
+<h2 id="_3">データフロー</h2>
+<p>Watson Discoveryでは、データは3つのステージのいずれかを経由して流れます。取得」、「エンリッチ」、「分析・検索」の3つの段階を経てデータが流れます。</p>
+<p><strong>取得</strong>。データは 1 つまたは複数のデータソースから取り込まれ、不要なコンテンツ (グラフィックやフォーマットなど) が取り除かれた後、Enrich ステージに渡されます。</p>
+<p><strong>Enrich</strong>:データ（通常、構造化テキストと非構造化テキストの混合）は、自然言語処理や機械学習などの技術を用いて処理され、生のテキストに意味や文脈を与えます。このエンリッチされたデータは、コレクションに保存されます。</p>
+<p><strong>分析と検索</strong>。1つまたは複数のコレクションからの強化されたデータを使用して、発見や探索を行ったり、検索ベースのアプリケーションを通じて専門家の支援を可能にします。</p>
+<p><img alt="データフロー" src="images/data-flow.png" /></p>
+<h2 id="_4">アーキテクチャ</h2>
+<p><img alt="アーキテクチャ" src="images/architecture.png" /></p>
+<p>Discovery を使用する一般的な方法は、アプリケーションから Discovery API にアクセスすることです。Watson チームは、多くのプログラミング言語をサポートする <a href="#sdks">SDK</a> をリリースしており、Web アプリケーションやモバイル アプリケーションで Discovery を簡単に使用できるようになっています。</p>
+<p>すべてのデータコンテンツは、Watson Discovery コレクション内に保存され、強化されています。データは特定の構造を必要とせず、複数の公共および民間のデータソースから取得することができます。すべての Discovery プロジェクトには、Sample Collection という名前の事前にエンリッチされたデータコレクションが付属しています (ソフトウェアのインストールマニュアルで構成されています)。</p>
+<p>オプションとして、Watson Knowledge Studio を使用すると、特定の業界や組織のデータに含まれる固有のエンティティや関係性の理解を深めるために、ドメインエキスパートを使用して Discovery のカスタマイズを支援することができます。</p>
+<p>Discoveryの典型的な使用例としては、以下のようなものがあります。</p>
+<ul>
+<li><em>何千もの製品レビューを一度に検索する必要がある</em>。ディスカバリーコレクションを作成し、そのコレクションを照会したり、時系列でセンチメントをグラフ化したりするUIを構築します。</li>
+<li>ドキュメント内のテキストをプログラムで検索する必要がある場合*。Discoveryの通路検索機能を使用して、FAQチャットボットを作成します。</li>
+<li><em>異なるフォーマットの何千ものドキュメントがあり、それらを論理的に整理する必要がある</em>。Discoveryを使って、キーワード、コンセプト、関係性を引き出し、ソートします。</li>
+</ul>
+<h2 id="_5">ディスカバリーへのアクセス</h2>
+<h3 id="_6">ツール</h3>
+<p>前述したように、Discovery には、IBM Cloud または IBM Cloud Pak for Data から利用できる独自のツールセットがあり、Discovery のプロジェクトやコレクションを手動で管理するための UI が提供されています。</p>
+<p>以下の動画では、このツールを使って新しいプロジェクトとデータ・コレクションを作成し、エンリッチメントのためにデータ・ファイルをインジェストする方法を紹介しています。</p>
+<p><img alt="disco-v2-upload" src="images/disco-v2-upload.gif" /></p>
+<p>チュートリアルの <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-getting-started&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Getting started with the Watson Discovery Sample Project</a> は、Discovery UI ツールの操作方法を学ぶためのもう 1 つの素晴らしいリソースです。</p>
+<h3 id="sdk">SDK</h3>
+<p>プログラムによるアクセスのために、Discovery には多数の言語がサポートされています。以下のリストは、現在の開発者向けSDKを示しています。</p>
+<ul>
+<li><a href="https://github.com/watson-developer-cloud/node-sdk">Node SDK</a></li>
+<li><a href="https://github.com/watson-developer-cloud/python-sdk">Python SDK</a></li>
+<li><a href="https://github.com/watson-developer-cloud/swift-sdk">Swift SDK</a></li>
+<li><a href="https://github.com/watson-developer-cloud/java-sdk">Java&trade; SDK</a></li>
+<li><a href="https://github.com/watson-developer-cloud/go-sdk">Go SDK</a></li>
+<li><a href="https://github.com/watson-developer-cloud/ruby-sdk">Ruby SDK</a></li>
+<li>【.NET SDK】(https://github.com/watson-developer-cloud/dotnet-standard-sdk)</li>
+<li><a href="https://github.com/watson-developer-cloud/salesforce-sdk">Salesforce SDK</a></li>
+</ul>
+<h3 id="apis">APIs</h3>
+<p>API の詳細については、<a href="https://cloud.ibm.com/apidocs/discovery-data?cm_sp=ibmdev-_-developer-articles-_-cloudreg">Discovery API documentation</a>をご参照ください。</p>
+<h3 id="_7">コードサンプル</h3>
+<p>以下の Node.js コード・サンプルは、IBM Cloud 上の Discovery プロジェクトを認証してクエリする方法を示しています。クエリの概念について詳しく知りたい場合は、Discovery <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-defaults&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">documentation</a>をご覧ください。</p>
+<p>``javascript
+const DiscoveryV2 = require('ibm-watson/discovery/v2');
+const { IamAuthenticator } = require('ibm-watson/auth');</p>
+<p>const discovery = new DiscoveryV2({
+  version: '{version}',
+  authenticator: new IamAuthenticator({
+    apikey: '{apikey}',
+  }),
+  serviceUrl: '{url}',
+});</p>
+<p>const params = {
+  projectId:'{projectId}' です。
+  クエリ'{field}:{value}' です。
+};</p>
+<p>discovery.query(params)
+  .then(response =&gt; {)
+    console.log(JSON.stringify(response.result, null, 2));
+  })
+  .catch(err =&gt; {
+    console.log('error:', err);
+  });</p>
+<p>```</p>
+<h2 id="_8">まとめ</h2>
+<p>この記事では、非構造化データ（JSON、HTML、PDF、Word など）を高速かつ正確に取り込み、正規化し、エンリッチし、検索することができる Watson Discovery についてご紹介しました。自然言語理解や文書変換などのコア Watson API と、プライベートデータやパブリックデータの大規模なコレクションを簡単にアップロード、エンリッチ、インデックス化できる UI ツールをパッケージ化しています。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/" class="btn btn-neutral float-right" title="Create an app to perform intelligent searches on data">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../Code-Learning-Paths/get-started-watson-discovery/" class="btn btn-neutral" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Code-Learning-Paths/get-started-watson-discovery/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

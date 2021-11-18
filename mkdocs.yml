@@ -1,0 +1,14 @@
+site_name: IBM Code Learning Path 日本語サイト
+nav:
+  - Home: index.md
+  - 'Learning Paths':
+    - 'Watson Discoveryを始める':
+      - Index: Code-Learning-Paths/get-started-watson-discovery/index.md
+      - Introduction Watson Discovery: Code-Articles/introduction-watson-discovery/index.md
+      - Create an app to perform intelligent searches on data: Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/index.md
+      - Enhance customer helpdesk with smart document understanding using search skill: Code-Patterns/enhance-customer-helpdesk-with-smart-document-understanding-using-search-skill/index.md
+      - Create an intelligent search app using watson discovery ui components: Code-Tutorials/create-an-intelligent-search-app-using-watson-discovery-ui-components/index.md
+      - Summary: Code-Learning-Paths/get-started-watson-discovery/summary/index.md
+theme:
+  name: readthedocs
+  locale: ja
