@@ -52,11 +52,11 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Learning Paths</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Watson Discoveryを始める</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Watson Discoveryを始めましょう</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Learning-Paths/get-started-watson-discovery/">Index</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Learning-Paths/get-started-watson-discovery/">インデックス</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Articles/introduction-watson-discovery/">Introduction Watson Discovery</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Articles/introduction-watson-discovery/">Watson Discoveryの紹介</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/">Create an app to perform intelligent searches on data</a>
                 </li>
@@ -103,13 +103,13 @@
             <div class="section">
               
                 <p>IBM Watson Discovery has a powerful analytics engine that provides cognitive enrichments and insights into your data. This tutorial showcases a new feature of the Discovery service -- Watson Discovery UI components. These components are tied directly to your Discovery projects and can easily be plugged into your search application. The components are self-contained and don't require any additional API calls to the Discovery service to retrieve data.</p>
-<h2 id="learning-objectives">Learning objectives</h2>
+<h2 id="learning-objectives">Learning objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
 <p>In this tutorial, learn how to navigate the Watson Discovery service to load and manage your data. This includes enhancing the enrichments that are applied to your data and building a custom panel to query and visualize your data. Then, learn how to replicate the search panel in your own application, which is built using <a href="https://reactjs.org/">React</a>, <a href="https://expressjs.com/">Express</a>, and the Watson Discovery UI components.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>To follow along with this tutorial, you must have an <a href="https://cloud.ibm.com/login?cm_sp=ibmdev-_-developer-tutorials-_-cloudreg">IBM Cloud account</a> where you can provision an instance of Watson Discovery.</p>
-<h2 id="estimated-time">Estimated time</h2>
+<h2 id="estimated-time">Estimated time<a class="headerlink" href="#estimated-time" title="Permanent link">&para;</a></h2>
 <p>It should take you approximately 60 minutes to complete the tutorial.</p>
-<h2 id="steps">Steps</h2>
+<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="#launch-watson-discovery">Launch Watson Discovery</a></li>
 <li><a href="#create-a-new-project">Create a new project</a></li>
@@ -119,7 +119,7 @@
 <li><a href="#create-your-ui-app">Create your UI app</a></li>
 <li><a href="#key-files-and-concepts">Key files and concepts</a></li>
 </ol>
-<h3 id="launch-watson-discovery">Launch Watson Discovery</h3>
+<h3 id="launch-watson-discovery">Launch Watson Discovery<a class="headerlink" href="#launch-watson-discovery" title="Permanent link">&para;</a></h3>
 <p>If you do not have an IBM Cloud account, register for a <a href="https://cloud.ibm.com/registration?cm_sp=ibmdev-_-developer-tutorials-_-cloudreg">free trial account</a>.</p>
 <ol>
 <li>
@@ -131,7 +131,7 @@
 <p>From the Discovery instance page, click <strong>Launch Watson Discovery</strong>.</p>
 </li>
 </ol>
-<h3 id="create-a-new-project">Create a new project</h3>
+<h3 id="create-a-new-project">Create a new project<a class="headerlink" href="#create-a-new-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>The landing page for the Discovery service shows you a list of current projects. Click <strong>New project</strong>.</p>
@@ -142,7 +142,7 @@
 <p><img alt="project-create" src="../images/project-create.png" /></p>
 </li>
 </ol>
-<h3 id="upload-data-files-into-collection">Upload data files into collection</h3>
+<h3 id="upload-data-files-into-collection">Upload data files into collection<a class="headerlink" href="#upload-data-files-into-collection" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>The next step is telling Discovery where your data will come from. In this example, you upload the data from JSON data files, so click <strong>Upload data</strong>, and then click <strong>Next</strong>.</p>
@@ -166,7 +166,7 @@
 </li>
 </ol>
 <p>Your data starts to upload. Discovery provides alerts to tell you when the upload is complete.</p>
-<h3 id="enrich-the-data">Enrich the data</h3>
+<h3 id="enrich-the-data">Enrich the data<a class="headerlink" href="#enrich-the-data" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Click <strong>Manage collections</strong> on the left to show all of the collections associated with your project. </p>
@@ -183,7 +183,7 @@
 <p>For each of these new enrichments, click <strong>Fields to enrich</strong>, and select the <strong>text</strong> field.</p>
 </li>
 </ol>
-<h3 id="add-enrichments-to-search-panel">Add enrichments to search panel</h3>
+<h3 id="add-enrichments-to-search-panel">Add enrichments to search panel<a class="headerlink" href="#add-enrichments-to-search-panel" title="Permanent link">&para;</a></h3>
 <p>Now that you have some new enrichments, add them to your default search panel.</p>
 <ol>
 <li>
@@ -218,17 +218,17 @@
 <p>If you click <strong>View passage in document</strong> for any of the reviews, you drill down into the review data. If you click the <strong>JSON</strong> tab, you can see the actual result that is returned by Discovery.</p>
 <p><img alt="facet-passage-json" src="../images/facet-passage-json.png" /></p>
 <p>Notice that in this case, the search found a match with the <code>title</code> of the review. The actual review is shown in the <code>text</code> field.</p>
-<h3 id="create-your-ui-app">Create your UI app</h3>
+<h3 id="create-your-ui-app">Create your UI app<a class="headerlink" href="#create-your-ui-app" title="Permanent link">&para;</a></h3>
 <p>Now that your search panel has been enhanced to show all of the interesting facets of the data, you can build an application that displays that same panel. For this task, you use the <a href="https://github.com/watson-developer-cloud/discovery-components">starter kit</a> provided by Watson Discovery.</p>
 <p>The starter kit provides multiple ways to develop your app, but in this tutorial, you'll choose the manual method to integrate your Discovery collection with their example app.</p>
-<h4 id="clone-the-repo">Clone the repo</h4>
+<h4 id="clone-the-repo">Clone the repo<a class="headerlink" href="#clone-the-repo" title="Permanent link">&para;</a></h4>
 <ol>
 <li>To get started, you first need to clone the GitHub repo to your local system.</li>
 </ol>
 <pre><code class="language-bash">$ git clone https://github.com/watson-developer-cloud/discovery-components.git
 $ cd journeys/discovery-components
 </code></pre>
-<h4 id="gather-your-credentials">Gather your credentials</h4>
+<h4 id="gather-your-credentials">Gather your credentials<a class="headerlink" href="#gather-your-credentials" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>Return to IBM Cloud and your Watson Discovery launch panel to get your API key and service URL.</p>
@@ -239,7 +239,7 @@ $ cd journeys/discovery-components
 <p><img alt="project-id" src="../images/project-id.png" /></p>
 </li>
 </ol>
-<h4 id="add-credentials-to-environment-files">Add credentials to environment files</h4>
+<h4 id="add-credentials-to-environment-files">Add credentials to environment files<a class="headerlink" href="#add-credentials-to-environment-files" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>From the root directory of your local repo, run the following commands to create the environment files. Note that the files must be created in the examples/discovery-search-app directory.</p>
@@ -254,7 +254,7 @@ DISCOVERY_APIKEY=&lt;replace with API key&gt;" &gt; ibm-credentials.env</code></
 <p>Update the ibm-credentials.env file with your Discovery credentials, and update the .env.local file with your project ID.</p>
 </li>
 </ol>
-<h4 id="build-and-run-the-app">Build and run the app</h4>
+<h4 id="build-and-run-the-app">Build and run the app<a class="headerlink" href="#build-and-run-the-app" title="Permanent link">&para;</a></h4>
 <p>Now, you can return to your project root directory to build and start your app.</p>
 <p>The following commands require that the <a href="https://yarnpkg.com/">Yarn</a> package manager be installed on your local system.</p>
 <pre><code class="language-bash">$ cd ../..
@@ -264,7 +264,7 @@ $ yarn workspace discovery-search-app run start
 <p>After it starts, a browser opens with the base search panel displayed. Enter a search string to view the list of matching reviews.</p>
 <p><img alt="ui-app-screen" src="../images/ui-app-screen.png" /></p>
 <p>Notice that all of the facets that you added in the Discovery tool show up here.</p>
-<h2 id="key-files-and-concepts">Key files and concepts</h2>
+<h2 id="key-files-and-concepts">Key files and concepts<a class="headerlink" href="#key-files-and-concepts" title="Permanent link">&para;</a></h2>
 <p>The Discovery UI app consists of a React client and Express server. To explore the code, navigate to the examples/discovery-search-app subdirectory. There, you find the React code in the src directory and the Express code in the server.js file.</p>
 <p>The following code shows the Discovery UI React components being imported.</p>
 <pre><code class="language-js">// examples/disovery-search-app/src/App.js
@@ -336,7 +336,7 @@ app.use(
 );
 </code></pre>
 <p>From the client-side perspective, the call to instantiate a Discovery service instance works because the authenticator is substituted with an actual token. This also means that the client doesn't have to worry about embedding the credentials in the client code or making them visible in the browser console.</p>
-<h2 id="summary">Summary</h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>In this tutorial, you learned how to navigate the Watson Discovery tool to create a project and upload data into a collection. You then learned how to enrich the data and build a custom search panel to query and visualize the data.</p>
 <p><img alt="final-disco-panel" src="../images/final-disco-panel.png" /></p>
 <p>Finally, you replicated the same search panel in a custom application by using the Watson Discovery UI Components.</p>

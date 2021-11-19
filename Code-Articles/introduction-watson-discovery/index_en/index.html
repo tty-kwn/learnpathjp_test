@@ -52,11 +52,11 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Learning Paths</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Watson Discoveryを始める</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Watson Discoveryを始めましょう</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Learning-Paths/get-started-watson-discovery/">Index</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Code-Learning-Paths/get-started-watson-discovery/">インデックス</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../">Introduction Watson Discovery</a>
+                <li class="toctree-l2"><a class="reference internal" href="../">Watson Discoveryの紹介</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../Code-Patterns/create-an-app-to-perform-intelligent-searches-on-data/">Create an app to perform intelligent searches on data</a>
                 </li>
@@ -102,13 +102,13 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>With IBM Watson Discovery, you can ingest, normalize, enrich, and search your unstructured data (JSON, HTML, PDF, Word, and more) with speed and accuracy. It packages core Watson APIs such as Natural Language Understanding and Document Conversion along with UI tools that enable you to easily upload, enrich, and index large collections of private or public data.</p>
 <p>The following image shows a high-level view of all of the components that make up the Discovery pipeline.</p>
 <p><img alt="pipeline" src="../images/disco-pipeline-new.png" /></p>
 <p><strong>Note:</strong> Watson Discovery V2 was released in August 2021. For existing V1 users, you can <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-version-choose#version-choose-comparison&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">compare the features</a> of V1 and V2.</p>
-<h2 id="terms-and-concepts">Terms and concepts</h2>
-<h3 id="watson-discovery-service-terms">Watson Discovery service terms</h3>
+<h2 id="terms-and-concepts">Terms and concepts<a class="headerlink" href="#terms-and-concepts" title="Permanent link">&para;</a></h2>
+<h3 id="watson-discovery-service-terms">Watson Discovery service terms<a class="headerlink" href="#watson-discovery-service-terms" title="Permanent link">&para;</a></h3>
 <p>This section covers the terms and concepts that are specific to Discovery.</p>
 <table>
 <thead>
@@ -164,7 +164,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="enrichments">Enrichments</h3>
+<h3 id="enrichments">Enrichments<a class="headerlink" href="#enrichments" title="Permanent link">&para;</a></h3>
 <p>Discovery has a powerful analytics engine that provides cognitive enrichments and insights into your data. With built-in natural language processing (NLP) capabilities, it can extract enrichments from a wide range of document types, such as JSON, HTML, PDF, and Microsoft&trade; Word. The following table shows the key enrichments.</p>
 <table>
 <thead>
@@ -201,13 +201,13 @@
 </tbody>
 </table>
 <p>The ability to make natural language queries on these enrichments provides an advantage over typical keyword search engines.</p>
-<h2 id="data-flow">Data flow</h2>
+<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
 <p>In Watson Discovery, data flows through one of three stages: Acquire, Enrich, and Analyze and Search.</p>
 <p><strong>Acquire</strong>: Data is ingested from one or more data sources, stripped of unnecessary content (such as graphics and formatting), and then passed to the Enrich stage.</p>
 <p><strong>Enrich</strong>: The data (typically, a mix of structured and unstructured text) is processed using techniques such as natural language processing and machine learning to provide meaning and context to the raw text. This enriched data is stored in collections.</p>
 <p><strong>Analyze and Search</strong>: Uses the enriched data from one or more collections to conduct discovery and exploration or to enable expert assistance through search-based applications.</p>
 <p><img alt="data-flow" src="../images/data-flow.png" /></p>
-<h2 id="architecture">Architecture</h2>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <p><img alt="architecture" src="../images/architecture.png" /></p>
 <p>A common way to use Discovery is by accessing the Discovery APIs from your application. The Watson team releases <a href="#sdks">SDKs</a> that support many programming languages so that you can use Discovery easily in a web or mobile application.</p>
 <p>All of the data content is stored and enriched within Watson Discovery collections. The data does not require any specific structure and can come from multiple public and private data sources. Every Discovery project comes with a pre-enriched data collection named Sample Collection (comprised of software installation manuals).</p>
@@ -218,13 +218,13 @@
 <li><em>The need to programmatically find text within a document</em>: Use the passage retrieval feature of Discovery to create an FAQ chatbot.</li>
 <li><em>There are thousands of documents in different formats and you need to organize them logically</em>: Use Discovery to pull out keywords, concepts, and relationships to sort them.</li>
 </ul>
-<h2 id="accessing-discovery">Accessing Discovery</h2>
-<h3 id="tooling">Tooling</h3>
+<h2 id="accessing-discovery">Accessing Discovery<a class="headerlink" href="#accessing-discovery" title="Permanent link">&para;</a></h2>
+<h3 id="tooling">Tooling<a class="headerlink" href="#tooling" title="Permanent link">&para;</a></h3>
 <p>As mentioned previously, Discovery has its own set of tooling that is available through IBM Cloud or IBM Cloud Pak for Data and which provides a UI to manually manage your Discovery projects and collections.</p>
 <p>The following video shows how you can use the tool to create a new project and data collection, and then ingest data files for enrichment.</p>
 <p><img alt="disco-v2-upload" src="../images/disco-v2-upload.gif" /></p>
 <p>The <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-getting-started&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">Getting started with the Watson Discovery Sample Project</a> tutorial provides another great resource for learning how to navigate the Discovery UI tooling.</p>
-<h3 id="sdks">SDKs</h3>
+<h3 id="sdks">SDKs<a class="headerlink" href="#sdks" title="Permanent link">&para;</a></h3>
 <p>For programmatic access, Discovery comes with support for a large number of languages. The following list shows the current developer SDKs.</p>
 <ul>
 <li><a href="https://github.com/watson-developer-cloud/node-sdk">Node SDK</a></li>
@@ -236,9 +236,9 @@
 <li><a href="https://github.com/watson-developer-cloud/dotnet-standard-sdk">.NET SDK</a></li>
 <li><a href="https://github.com/watson-developer-cloud/salesforce-sdk">Salesforce SDK</a></li>
 </ul>
-<h3 id="apis">APIs</h3>
+<h3 id="apis">APIs<a class="headerlink" href="#apis" title="Permanent link">&para;</a></h3>
 <p>For more information on the APIs, see the <a href="https://cloud.ibm.com/apidocs/discovery-data?cm_sp=ibmdev-_-developer-articles-_-cloudreg">Discovery API documentation</a>.</p>
-<h3 id="code-sample">Code sample</h3>
+<h3 id="code-sample">Code sample<a class="headerlink" href="#code-sample" title="Permanent link">&para;</a></h3>
 <p>The following Node.js code sample shows how to authorize and query your Discovery project on IBM Cloud. If you need more information on query concepts, look at the Discovery <a href="https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-query-defaults&amp;cm_sp=ibmdev-_-developer-articles-_-cloudreg">documentation</a>.</p>
 <pre><code class="language-javascript">const DiscoveryV2 = require('ibm-watson/discovery/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
@@ -265,7 +265,7 @@ discovery.query(params)
   });
 
 </code></pre>
-<h2 id="summary">Summary</h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>This article gave you an introduction to Watson Discovery, where you can ingest, normalize, enrich, and search your unstructured data (JSON, HTML, PDF, Word, and more) with speed and accuracy. It packages core Watson APIs such as Natural Language Understanding and Document Conversion along with UI tools that enable you to easily upload, enrich, and index large collections of private or public data.</p>
               
             </div>
